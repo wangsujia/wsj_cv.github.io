@@ -1,0 +1,234 @@
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style 
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+\usepackage{wasysym}
+\usepackage{marvosym}
+\usepackage{soul}
+\usepackage{xcolor} 
+\definecolor{darkblue}{RGB}{0,0,139}
+\definecolor{darkpurple}{RGB}{51,0,102}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkpurple,
+    filecolor=darkpurple,
+    urlcolor=darkpurple,
+    linktoc=all,
+}
+
+\usepackage[left=0.4 in,top=0.3 in,right=0.4 in,bottom=0.3in]{geometry} % Document margins
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Sujia Wang} % Your name 
+%\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional) 
+\address{\\ Phone: (+86) 131-8723-0103 \\ Email: wsj22@mails.tsinghua.edu.cn \\ \href{https://wangsujia.github.io/}{Home} \\ \href{https://scholar.google.com/citations?hl=zh-CN&view_op=list_works&gmla=AL3_zigCJd9kLomBYXv3eViu9-x6CKfGZjd5UyPcpymJwMAg_-KLLjmW5zYGxiTuGAr8rfhekD9MNE_89ENpPLv84vHeIGM&user=oWOc7sEAAAAJ}{Google Scholar}}
+
+\definecolor{TsinghuaPurple}{cmyk}{0.58,0.90,0,0}
+\renewenvironment{rSection}[1]{
+\sectionskip
+\textcolor{TsinghuaPurple}{\MakeUppercase{#1}}
+\sectionlineskip
+\hrule
+\begin{list}{}{
+%\setlength{\leftmargin}{1.5em}
+\setlength{\leftmargin}{0em}
+}
+\item[]
+}{
+\end{list}
+}
+
+
+\begin{document}  
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+{\bf Tsinghua University (THU), CHINA} \hfill {Sept. 2022 - Jun. 2025}
+\\ 
+\textit{M.E. in Data Science and Information Technology} \hfill{\textit {GPA: 3.6/4}}
+\vspace{-7pt}
+\begin{itemize}[itemsep=-5pt]
+    \item Advised by Prof. \href{https://andytang15.github.io/}{\textbf{Yansong Tang}} and Prof. \href{https://leichenthu.github.io/}{\textbf{Lei Chen}} 
+    \item Research on Video Understanding and Multimodal Learning
+    \item \textbf{Core Courses:} {Machine Learning, Learning from Data and Foundations for Big Data Analytics}
+\end{itemize}
+{\bf University of Cambridge (CAMB), UK} \hfill {Nov. 2021 - Mar. 2022}
+\\ 
+\textit{Winter Program} \hfill{\textit {Grand: A}}
+\vspace{-7pt}
+\begin{itemize}[itemsep=-5pt]
+    \item Advised by Prof. \href{https://scholar.google.com/citations?user=4YhNJBEAAAAJ&hl=en}{\textbf{Pietro Lio}}
+    \item Project on Path planning of unmanned surface vehicles based on deep learning
+    \item \textbf{Core Courses:}{Machine Learning and Neural Networks}
+\end{itemize}
+{\bf Northeastern University (NEU), CHINA} \hfill {Sept. 2018 - Jun. 2022}
+\\ 
+\textit{B.S. in Mathematics and Applied Mathematics} \hfill{\textit {GPA: 3.3/4}}
+\vspace{-7pt}
+\begin{itemize}[itemsep=-5pt]
+    \item Advised by Prof. \href{https://scholar.google.com/citations?hl=zh-CN&user=QKrGYo4AAAAJ}{\textbf{Zhiqiong Wang}} and  Prof. \href{http://cos.neu.edu.cn/2019/0318/c3821a84520/page.htm}{\textbf{Xinhui Shao}}
+    \item Research on Graph and Information Theory Applications in Biology
+    \item \textbf{Core Courses:} {Mathematical Analysis, Advanced Algebra, Probability Theory, and Analytic Geometry}
+\end{itemize}
+\end{rSection}
+
+%--------------------------------------------------------------------------------------
+%   Research Publications 
+%--------------------------------------------------------------------------------------
+\iffalse
+\begin{rSection}{ Publications } \itemsep -3pt        
+
+{[J1] \textbf{Y. Wang}, X. Shen and Y. Xu, "\textit{Joint Planning of Active Distribution Network and EV Charging Stations Considering Vehicle-to-Grid Functionality and Reactive Power Support}", \textbf{CSEE Journal of Power and Energy Systems}}, 2023, Published, IF=7.10\\
+{[J2] \textbf{Y. Wang} and X. Shen, "\textit{Integrated Planning of Multi-Charging Facilities and Urban Distribution Network for Autopilot EVs}", \textbf{IEEE Transactions on Power System}}, 2024, Under Review, IF=6.60\\
+{[J3] C. Wei, \textbf{Y. Wang} and X. Shen, "\textit{Synergistic Planning of photovoltaic Energy Storage-Charging Stations and Hydrogen Refueling Stations Considering Carbon Emission Flows}", \textbf{Automation of Electric Power Systems}}, 2023, In Chinese, Published \\    
+{[J4] W. Zheng, M. Zhong, D. Guo, \textbf{Y. Wang}, et al, "\textit{Simulation Analysis of Transient Thermal Efect of Ground Wire-suspension Clamp System Wound by Aluminium Armour Tape}", \textbf{Guangdong Electric Power}}, 2020, In Chinese, Published\\
+{[C1] G. Liu, \textbf{Y. Wang}, et al, "\textit{Coordinated Planning of Active Distribution Network and V2G Charging Stations Considering the Load Characteristics of V2G Stations}", \textbf{2022 IEEE 6th Conference on Energy Internet and Energy System Integration (EI2)}}, Chengdu, China, 2022, Published (The first student author)\\
+{[C2] G. Liu, W. Chen, \textbf{Y. Wang}, et al, "\textit{Co-Planning of ADN and EV Charging Stations Considering EV Spatial Migration and Sequential Charging Characteristics}", \textbf{2023 8th Asia Conference on Power and Electrical Engineering (ACPEE)}}, Tianjin, China, 2023, Published\\
+{[P1] X. Shen, \textbf{Y. Wang}, et al, "\textit{Method for Joint Planning of Active Distribution Network and V2G Charging Stations}", \textbf{Chinese Patent 202310630383.X}}, 2023, Under Substantive Examination (The first student author)\\
+{[P2] G. Liu, W. Zheng, \textbf{Y. Wang}, et al, "\textit{Experimental Device for Simulating Different Contact States of Plum Blossom Contacts by Adjusting the Insertion Depth of Static Contacts}", \textbf{Chinese Patent ZL201911315956.X}}, 2021, Published\\
+{[P3] X. Shen, W. Chen, \textbf{Y. Wang}, et al, "\textit{Method for Collaborative Planning of New Energy Vehicle Charging Stations Considering Carbon Emission Flow}", \textbf{Chinese Patent 202311022600.3}}, 2023, Under Substantive Examination\\
+{[P4] W. Tang, Y. Zhao, C. Zhong, X. Zhao, X. Shen, \textbf{Y. Wang}, et al, "\textit{Method for Optimal Location and Sizing of Wind, Solar, and V2G Charging Stations in Distribution Networks Based on Improved Beetle Antennae Search Particle Swarm Algorithm}", \textbf{Chinese Patent 35082119900201004.X}}, 2022, Under Substantive Examination (The first student author)
+\end{rSection}
+\fi
+\begin{rSection}{Publications and Patents}
+    \vspace{-3pt}
+    \textcolor{darkpurple}{\normalsize{J = Journel, C = Conference, P = Patent, S = Software Copyright, *: Equal Contribution}}\vspace{7pt}\\  
+\textbf{\large{\textcolor{darkpurple}{Video Understanding}}}\vspace{5pt}\\
+{\label{c1}[C1] \textbf{Sujia Wang}*, Xiangwei Shen*, Yansong Tang, Xin Dong, Wenjia Geng, and Lei Chen. \textbf{Localization-Aware Multi-Scale Representation Learning for Repetitive Action Counting}, \textit{\textbf{VCIP(Oral)}}, 2024.}\vspace{3pt}\\
+{\label{c2}[C2] Shiyi Zhang, Wenxun Dai, \textbf{Sujia Wang}, Xiangwei Shen, Jiwen Lu, Jie Zhou, and Yansong Tang. \textbf{LOGO: A Long-Form Video Dataset for Group Action Quality Assessment}, in \textit{\textbf{CVPR}}, 2023. \href{https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_LOGO_A_Long-Form_Video_Dataset_for_Group_Action_Quality_Assessment_CVPR_2023_paper.pdf}{[Paper]} \href{https://github.com/shiyi-zh0408/LOGO}{[Code]}}\vspace{3pt}\\
+{\label{p1}[P1] Yansong Tang and \textbf{Sujia Wang}. \textbf{Action Recognition Method, Device, Computer Equipment, Storage Medium, and Computer Program Product}, Chinese Patent Application Number: 10000533025811, 2024, Under Substantive Examination.}\vspace{7pt}\\
+\textbf{\large{\textcolor{darkpurple}{Multimodal Learning}}}\vspace{5pt}\\
+{\label{c3}[C3] Wenjia Geng, \textbf{Sujia Wang}, Baoliang Tain, Zhang Xuezhong, Wencheng Zhu, Yansong Tang, and Lei Chen. \textbf{CoSTL: Comprehensive Spatial-Temporal Representation Learning for Moment Retrieval and Highlight Detection}, in \textit{\textbf{CVPR}}, 2025, Under Review.}\vspace{3pt}\\
+{\label{c4}[C4] Wenjia Geng, Yong Liu, Lei Chen, \textbf{Sujia Wang}, Jie Zhou, and Yansong Tang. \textbf{Learning Multi-Scale Video-Text Correspondence for Weakly Supervised Tasks}, in \textit{\textbf{AAAI}}, 2023. \href{https://ojs.aaai.org/index.php/AAAI/article/view/27959}{[Paper]}}\vspace{7pt}\\
+\textbf{\large{\textcolor{darkpurple}{Graph and Information Theory Application}}}\vspace{5pt}\\
+{\label{j1}[J1] \textbf{Sujia Wang}, Yunqi Liu, Qixuan Sun and Zhiqiong Wang. \textbf{Optimization Method for Weak Association Regulation in Gene Regulatory Networks}, in \textit{\textbf{Think Tank Era}}, 2022(17): 207-210. \href{https://zhikushidai.oss-cn-beijing.aliyuncs.com/202217/17PDF/53.pdf}{[Paper]}}\vspace{3pt}\\
+{\label{s1}[S1] \textbf{Sujia Wang}, Zhiqiong Wang, Yunqi Liu, Qixuan Sun, Yunrui Hao, and Renfei Gao. \textbf{Optimization System for Gene Regulatory Networks Targeting Key Node Substructures V1.0}, Chinese Software Copyright, Registration Number: 2022SR0278775, 2022.}\vspace{3pt}\\
+{\label{s2}[S2] \textbf{Sujia Wang}, Zhiqiong Wang, Yunqi Liu, Qixuan Sun, Renfei Gao, and Yunrui Hao. \textbf{Information Theory-Based Weak Association Regulation Optimization System for Gene Regulatory Networks V1.0}, Chinese Software Copyright, Registration Number: 2022SR0138787, 2022.}\vspace{3pt}\\
+{\label{s3}[S3] Qixuan Sun, Zhiqiong Wang, Yunrui Hao, Renfei Gao, \textbf{Sujia Wang}, and Yunqi Liu. \textbf{Optimization System for Gene Regulatory Networks Targeting Compact Structures V1.0}, Chinese Software Copyright, Registration Number: 2022SR0283545, 2022.}
+\end{rSection}
+%-------------------------------------------------------------------------------
+%	PROJECTS
+
+\begin{rSection}{RESEARCH EXPERIENCE}
+% 研究生项目
+\vspace{5pt}
+\textbf{\large{\textcolor{darkpurple}{Comprehensive Human Action Understanding in Videos: From Coarse to Fine Granularity}}}\vspace{5pt}\\
+\begin{rSubsection}{Temporal-Spatial Action Localization (TAL)} {Present}{}{}
+%identifies both the precise timing and spatial location of actions in video
+ %   \item \textbf{Identified} critical gaps in the availability of multi-person datasets for TAL with potential applications in monitoring systems for social security.
+    \item \textbf{Led} the formation of a data-labeling team of 10 trained professionals, pre-trained and fine-tuned YOLO-V5 models and X-AnyLabeling tools to accelerate and improve the labeling process, contributing 300 hours of work.
+    \item \textbf{Proposed} the Kitchen Monitoring Dataset, which includes over 8,000 multi-person temporal-spatial bounding box labels from real-life scenarios for action recognition and monitoring.
+\end{rSubsection}\vspace{-8pt}
+\begin{rSubsection}{Repetitive Action Counting (RAC) \hyperref[c2]{[C1]}} {2023 - 2024}{}{}
+% predicts class-agnostic action occurrences without the need for exemplars
+    \item  \textbf{Proposed} the Localization-Aware Multi-Scale Representation Learning (LMRL) framework to improve RAC by addressing noise from action interruptions and inconsistencies.
+    \item \textbf{Developed} a Multi-Scale Period-Aware Representation (MPR) to handle diverse action frequencies and a Repetition Foreground Localization (RFL) method to enhance action representation with global semantic information.
+    \item \textbf{Achieved} state-of-the-art counting performance on the main benchmarks, one conference paper published on VCIP (2024 oral), supervised by Prof. \href{https://andytang15.github.io/}{\textbf{Yansong Tang}} and Prof. \href{https://leichenthu.github.io/}{\textbf{Lei Chen}}.
+\end{rSubsection}\vspace{-8pt}
+\begin{rSubsection}{Action Quality Assessment (AQA)  \hyperref[c2]{[C2]}} {2022 - 2023}{}{}
+%evaluates action quality in videos based on adherence to predefined criteria
+    \item \textbf{Led} an 8-person team with professional athletes in frame-level labeling of competition videos, utilizing LabelMe and COIN annotation tools, contributing 600 hours of work.
+    \item \textbf{Introduced} the LOGO dataset with 200 videos from 26 artistic swimming events and developed the \textit{Group-Aware Attention Module} to enhance AQA representations.
+    \item \textbf{Published} one conference paper on CVPR (2023), supervised by Prof. \href{https://andytang15.github.io/}{\textbf{Yansong Tang}} and Prof. \href{https://ivg.au.tsinghua.edu.cn/Jiwen_Lu/experiences.html}{\textbf{Jiwen Lu}}.
+\end{rSubsection}
+\vspace{5pt}
+
+% 第二个项目
+\textbf{\large{\textcolor{darkpurple}{Video-Text Multimodal Understanding}}}\vspace{5pt}\\
+\begin{rSubsection}{Video Highlight and Moment Retrieval (VH and MR) \hyperref[c3]{[C3]}} {Present}{}{}
+%extracts specific moments in a video that are relevant to a given text query
+    \item \textbf{Proposed} the CoSTL framework for video moment retrieval and highlight detection, addressing the challenge of simultaneously capturing fine-grained image-level information and temporal dynamics.
+    \item \textbf{Developed} a two-step, text-driven fine-grained image encoder and a multi-scale temporal perception module, improving both spatial and temporal understanding.
+    \item \textbf{Achieved} best performance on four main public benchmarks, and one conference paper under the review of CVPR (2025).
+\end{rSubsection}\vspace{-8pt}
+\begin{rSubsection}{Weakly Supervised temporal Article Grounding (WSAG) \hyperref[c4]{[C4]}} {2023 - 2024}{}{}
+%localizes cor-responding video segments for all "groundable" sentences in articles
+    \item \textbf{Proposed} the MVTCL framework for weakly supervised temporal article grounding, addressing the challenge of aligning multi-scale semantic information in both video and text modalities.
+    \item \textbf{Developed} a semantic calibration module to align hierarchical textual content with video segments, and introduced a multi-scale contrastive learning module to enhance discriminative representations.
+    \item \textbf{Achieved} state-of-the-art through the innovative architecture and supervision design, and one conference paper published on AAAI (2023), supervised by  Prof. \href{https://andytang15.github.io/}{\textbf{Yansong Tang}} and Prof. \href{https://scholar.google.com/citations?user=6a79aPwAAAAJ&hl=en}{\textbf{Jie Zhou}}
+\end{rSubsection}
+\vspace{5pt}
+\textbf{\large{\textcolor{darkpurple}{OxCam Research Programme}}}\vspace{5pt}\\
+% 剑桥项目
+\begin{rSubsection}{Path planning of unmanned surface vehicles based on deep learning} {2022}{}{}
+    \item \textbf{Proposed} an unmanned ship IoT model and used U-net to semantically segment water images.
+    \item \textbf{Awarded} as Excellent Team and received a Grand A, supervised by Prof. \href{https://scholar.google.com/citations?user=4YhNJBEAAAAJ&hl=en}{\textbf{Pietro Liò}}  .
+\end{rSubsection} 
+\vspace{5pt}
+% 基因调控网络项目
+\textbf{\large{\textcolor{darkpurple}{Applications of Information Theory and Graph Theory in Biology}}}\vspace{5pt}\\
+\begin{rSubsection}{Gene Regulatory Network Optimization Technique in Breast Cancer \hyperref[j1]{[J1]}\hyperref[s1]{[S1]},\hyperref[s2]{[S2]},\hyperref[s3]{[S3]}} {2021 - 2022}{}{}
+    \item \textbf{Proposed} three new algorithms based on the structural analysis and information theory reducing redundant edges in the network to improve its accuracy.
+    \item \textbf{Awarded Provincial Excellent Undergraduate Student Project}, supervised by Prof. \href{https://scholar.google.com/citations?hl=zh-CN&user=QKrGYo4AAAAJ}{\textbf{Zhiqiong Wang}}.
+\end{rSubsection}  
+\end{rSection} 
+
+\begin{rSection}{AWARDS AND HONORS} \itemsep -2pt
+    {\bf Academic Contests}
+\begin{itemize}[itemsep=-5pt]
+    \item \textbf{Second Prize}, Tsinghua-Berkley Shenzhen Institute Student Poster Competition \hfill Aug. 2024
+    \item \textbf{Golden Prize}, Global Citizens Open Innovation SDGs Challenge\hfill Dec. 2022 
+    \item \textbf{Second Prize}, National College Students Mathematical Contest in Modeling in LN \hfill Sept. 2021 
+    \item \textbf{First Prize}, Northeastern University Mathematical Contest in Modeling\hfill Sept. 2019 
+\end{itemize} 
+{\bf Scholarships}
+\begin{itemize}[itemsep=-5pt]
+    \item \textbf{First Prize Scholarship, Tsinghua University}\hfill 2023 - 2024
+    \item \textbf{Second Prize Scholarship, Northeastern University}\hfill 2018 - 2019
+\end{itemize}
+\end{rSection}
+\vspace{-1em}
+\begin{rSection}{Skills}
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+Programming Languages:& Python, Shell, \LaTeX, MATLAB, C++/C, Java/JavaScript\\
+Programming Tools: & Git, PyTorch \\
+%English Proficiency: & IELTS 6.5 (R 8, L/S/W 6)\\
+\end{tabular}   
+\end{rSection}
+\iffalse
+\begin{rSection}{OTHER EXPERIENCE} \itemsep -3pt  
+    Leadership Experiences\\
+{\textbf{Tsinghua University} \\ Member, Sports Team of Shenzhen International Graduate School} \hfill March 2022 - December 2022 \\ 
+{\textbf{Tsinghua-Berkley Shenzhen Institution} \\ Sports Coordinator, TBSI Masters' Class 221} \hfill Octomber 2021 - August 2022 \\   
+{\textbf{Student Innovation and Entrepreneurship Club of NEU} \\ Member, Outreach Practice Department} \hfill March 2018 - August 2018 \\
+{\textbf{Research Group of Gene} \\ Leader, Host Team} \hfill July 2019 - June 2020 \\
+    Leadership Experiences\\
+
+\end{rSection}
+\fi
+\iffalse
+\vspace{-0.2em}
+\begin{rSection}{Reference} \itemsep -3pt  
+{\textbf{Prof. Wenhu Tang, IET Fellow, IEEE Senior Member} \\ 
+South China University of Technology\\ E-mail: wenhutang@scut.edu.cn} \\
+{\textbf{Associate Prof. Libao Shi, IEEE Senior Member} \\ 
+Tsinghua University\\ E-mail: shilb@sz.tsinghua.edu.cn} \\
+{\textbf{Assistant Prof. Xinwei Shen, IEEE Senior Member} \\ 
+Tsinghua University\\ E-mail: sxw.tbsi@sz.tsinghua.edu.cn} \\
+\end{rSection} 
+\fi
+\end{document}
